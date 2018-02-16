@@ -27,6 +27,16 @@ class AnalyzeDataSourceRiskRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.RiskAnalysisJobConfig job_config = 2;</code>
      */
     private $job_config = null;
+    /**
+     * Optional job ID to use for the created job. If not provided, a job ID will
+     * automatically be generated. Must be unique within the project. The job ID
+     * can contain uppercase and lowercase letters, numbers, and hyphens; that is,
+     * it must match the regular expression: `[a-zA-Z\\d-]+`. The maximum length
+     * is 100 characters. Can be empty to allow the system to generate one.
+     *
+     * Generated from protobuf field <code>string job_id = 3;</code>
+     */
+    private $job_id = '';
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta2\Dlp::initOnce();
@@ -81,6 +91,40 @@ class AnalyzeDataSourceRiskRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\RiskAnalysisJobConfig::class);
         $this->job_config = $var;
+
+        return $this;
+    }
+
+    /**
+     * Optional job ID to use for the created job. If not provided, a job ID will
+     * automatically be generated. Must be unique within the project. The job ID
+     * can contain uppercase and lowercase letters, numbers, and hyphens; that is,
+     * it must match the regular expression: `[a-zA-Z\\d-]+`. The maximum length
+     * is 100 characters. Can be empty to allow the system to generate one.
+     *
+     * Generated from protobuf field <code>string job_id = 3;</code>
+     * @return string
+     */
+    public function getJobId()
+    {
+        return $this->job_id;
+    }
+
+    /**
+     * Optional job ID to use for the created job. If not provided, a job ID will
+     * automatically be generated. Must be unique within the project. The job ID
+     * can contain uppercase and lowercase letters, numbers, and hyphens; that is,
+     * it must match the regular expression: `[a-zA-Z\\d-]+`. The maximum length
+     * is 100 characters. Can be empty to allow the system to generate one.
+     *
+     * Generated from protobuf field <code>string job_id = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setJobId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->job_id = $var;
 
         return $this;
     }

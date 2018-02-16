@@ -57,6 +57,13 @@ class DlpJob extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.rpc.Status error_results = 9;</code>
      */
     private $error_results;
+    /**
+     * If created by a job trigger, the resource name of the trigger that
+     * instantiated the job.
+     *
+     * Generated from protobuf field <code>string job_trigger_name = 10;</code>
+     */
+    private $job_trigger_name = '';
     protected $details;
 
     public function __construct() {
@@ -294,6 +301,34 @@ class DlpJob extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Status::class);
         $this->error_results = $arr;
+
+        return $this;
+    }
+
+    /**
+     * If created by a job trigger, the resource name of the trigger that
+     * instantiated the job.
+     *
+     * Generated from protobuf field <code>string job_trigger_name = 10;</code>
+     * @return string
+     */
+    public function getJobTriggerName()
+    {
+        return $this->job_trigger_name;
+    }
+
+    /**
+     * If created by a job trigger, the resource name of the trigger that
+     * instantiated the job.
+     *
+     * Generated from protobuf field <code>string job_trigger_name = 10;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setJobTriggerName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->job_trigger_name = $var;
 
         return $this;
     }

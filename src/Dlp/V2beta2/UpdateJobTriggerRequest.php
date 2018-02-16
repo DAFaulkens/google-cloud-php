@@ -9,26 +9,25 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Request message for UpdateInspectTemplate.
+ * Request message for UpdateJobTrigger.
  *
- * Generated from protobuf message <code>google.privacy.dlp.v2beta2.UpdateInspectTemplateRequest</code>
+ * Generated from protobuf message <code>google.privacy.dlp.v2beta2.UpdateJobTriggerRequest</code>
  */
-class UpdateInspectTemplateRequest extends \Google\Protobuf\Internal\Message
+class UpdateJobTriggerRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
     /**
-     * New InspectTemplate value.
+     * New JobTrigger value.
      *
-     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.InspectTemplate inspect_template = 2;</code>
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.JobTrigger job_trigger = 2;</code>
      */
-    private $inspect_template = null;
+    private $job_trigger = null;
     /**
      * Mask to control which fields get updated.
      *
@@ -42,9 +41,8 @@ class UpdateInspectTemplateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -55,9 +53,8 @@ class UpdateInspectTemplateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
@@ -72,27 +69,27 @@ class UpdateInspectTemplateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * New InspectTemplate value.
+     * New JobTrigger value.
      *
-     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.InspectTemplate inspect_template = 2;</code>
-     * @return \Google\Cloud\Dlp\V2beta2\InspectTemplate
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.JobTrigger job_trigger = 2;</code>
+     * @return \Google\Cloud\Dlp\V2beta2\JobTrigger
      */
-    public function getInspectTemplate()
+    public function getJobTrigger()
     {
-        return $this->inspect_template;
+        return $this->job_trigger;
     }
 
     /**
-     * New InspectTemplate value.
+     * New JobTrigger value.
      *
-     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.InspectTemplate inspect_template = 2;</code>
-     * @param \Google\Cloud\Dlp\V2beta2\InspectTemplate $var
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.JobTrigger job_trigger = 2;</code>
+     * @param \Google\Cloud\Dlp\V2beta2\JobTrigger $var
      * @return $this
      */
-    public function setInspectTemplate($var)
+    public function setJobTrigger($var)
     {
-        GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\InspectTemplate::class);
-        $this->inspect_template = $var;
+        GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\JobTrigger::class);
+        $this->job_trigger = $var;
 
         return $this;
     }

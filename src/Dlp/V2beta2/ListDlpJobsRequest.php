@@ -31,6 +31,7 @@ class ListDlpJobsRequest extends \Google\Protobuf\Internal\Message
      * * Supported fields/values for inspect jobs:
      *     - `state` - PENDING|RUNNING|CANCELED|FINISHED|FAILED
      *     - `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY
+     *     - `trigger_name` - The resource name of the trigger that created job.
      * * Supported fields for risk analysis jobs:
      *     - `state` - RUNNING|CANCELED|FINISHED|FAILED
      * * The operator must be `=` or `!=`.
@@ -103,6 +104,7 @@ class ListDlpJobsRequest extends \Google\Protobuf\Internal\Message
      * * Supported fields/values for inspect jobs:
      *     - `state` - PENDING|RUNNING|CANCELED|FINISHED|FAILED
      *     - `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY
+     *     - `trigger_name` - The resource name of the trigger that created job.
      * * Supported fields for risk analysis jobs:
      *     - `state` - RUNNING|CANCELED|FINISHED|FAILED
      * * The operator must be `=` or `!=`.
@@ -130,6 +132,7 @@ class ListDlpJobsRequest extends \Google\Protobuf\Internal\Message
      * * Supported fields/values for inspect jobs:
      *     - `state` - PENDING|RUNNING|CANCELED|FINISHED|FAILED
      *     - `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY
+     *     - `trigger_name` - The resource name of the trigger that created job.
      * * Supported fields for risk analysis jobs:
      *     - `state` - RUNNING|CANCELED|FINISHED|FAILED
      * * The operator must be `=` or `!=`.

@@ -58,6 +58,8 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends \Google\Protobuf\In
      * A column can be tagged with a InfoType to use the relevant public
      * dataset as a statistical model of population, if available. We
      * currently support US ZIP codes, region codes, ages and genders.
+     * To programmatically obtain the list of supported InfoTypes, use
+     * ListInfoTypes with the supported_by=RISK_ANALYSIS filter.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.InfoType info_type = 2;</code>
      * @return \Google\Cloud\Dlp\V2beta2\InfoType
@@ -71,6 +73,8 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends \Google\Protobuf\In
      * A column can be tagged with a InfoType to use the relevant public
      * dataset as a statistical model of population, if available. We
      * currently support US ZIP codes, region codes, ages and genders.
+     * To programmatically obtain the list of supported InfoTypes, use
+     * ListInfoTypes with the supported_by=RISK_ANALYSIS filter.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.InfoType info_type = 2;</code>
      * @param \Google\Cloud\Dlp\V2beta2\InfoType $var

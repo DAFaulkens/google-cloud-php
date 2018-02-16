@@ -2,7 +2,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 // Original file comments:
-// Copyright 2017 Google Inc.
+// Copyright 2018 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -117,7 +117,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
 
     /**
      * Schedules a job to compute risk analysis metrics over content in a Google
-     * Cloud Platform repository. [How-to guide}(/dlp/docs/compute-risk-analysis)
+     * Cloud Platform repository. [How-to guide](/dlp/docs/compute-risk-analysis)
      * @param \Google\Cloud\Dlp\V2beta2\AnalyzeDataSourceRiskRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -281,6 +281,77 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     public function DeleteDeidentifyTemplate(\Google\Cloud\Dlp\V2beta2\DeleteDeidentifyTemplateRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/DeleteDeidentifyTemplate',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Creates a job to run DLP actions such as scanning storage for sensitive
+     * information on a set schedule.
+     * @param \Google\Cloud\Dlp\V2beta2\CreateJobTriggerRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CreateJobTrigger(\Google\Cloud\Dlp\V2beta2\CreateJobTriggerRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/CreateJobTrigger',
+        $argument,
+        ['\Google\Cloud\Dlp\V2beta2\JobTrigger', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Updates a job trigger.
+     * @param \Google\Cloud\Dlp\V2beta2\UpdateJobTriggerRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UpdateJobTrigger(\Google\Cloud\Dlp\V2beta2\UpdateJobTriggerRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/UpdateJobTrigger',
+        $argument,
+        ['\Google\Cloud\Dlp\V2beta2\JobTrigger', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Gets a job trigger.
+     * @param \Google\Cloud\Dlp\V2beta2\GetJobTriggerRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetJobTrigger(\Google\Cloud\Dlp\V2beta2\GetJobTriggerRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/GetJobTrigger',
+        $argument,
+        ['\Google\Cloud\Dlp\V2beta2\JobTrigger', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Lists job triggers.
+     * @param \Google\Cloud\Dlp\V2beta2\ListJobTriggersRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ListJobTriggers(\Google\Cloud\Dlp\V2beta2\ListJobTriggersRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/ListJobTriggers',
+        $argument,
+        ['\Google\Cloud\Dlp\V2beta2\ListJobTriggersResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Deletes a job trigger.
+     * @param \Google\Cloud\Dlp\V2beta2\DeleteJobTriggerRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DeleteJobTrigger(\Google\Cloud\Dlp\V2beta2\DeleteJobTriggerRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta2.DlpService/DeleteJobTrigger',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
         $metadata, $options);

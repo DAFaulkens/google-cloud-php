@@ -9,16 +9,15 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Request message for DeleteInspectTemplate.
+ * Request message for GetJobTrigger.
  *
- * Generated from protobuf message <code>google.privacy.dlp.v2beta2.DeleteInspectTemplateRequest</code>
+ * Generated from protobuf message <code>google.privacy.dlp.v2beta2.GetJobTriggerRequest</code>
  */
-class DeleteInspectTemplateRequest extends \Google\Protobuf\Internal\Message
+class GetJobTriggerRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Resource name of the organization and inspectTemplate to be deleted, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -30,9 +29,8 @@ class DeleteInspectTemplateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Resource name of the organization and inspectTemplate to be deleted, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -43,9 +41,8 @@ class DeleteInspectTemplateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Resource name of the organization and inspectTemplate to be deleted, for
-     * example `organizations/433245324/inspectTemplates/432452342` or
-     * projects/project-id/inspectTemplates/432452342.
+     * Resource name of the project and the triggeredJob, for example
+     * `projects/dlp-test-project/jobTriggers/53234423`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var

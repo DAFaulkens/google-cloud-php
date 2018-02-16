@@ -20,6 +20,13 @@ class CloudStorageOptions extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.CloudStorageOptions.FileSet file_set = 1;</code>
      */
     private $file_set = null;
+    /**
+     * Max number of bytes to scan from a file. If a scanned file's size is bigger
+     * than this value then the rest of the bytes are omitted.
+     *
+     * Generated from protobuf field <code>int64 bytes_limit_per_file = 4;</code>
+     */
+    private $bytes_limit_per_file = 0;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta2\Storage::initOnce();
@@ -44,6 +51,34 @@ class CloudStorageOptions extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\CloudStorageOptions_FileSet::class);
         $this->file_set = $var;
+
+        return $this;
+    }
+
+    /**
+     * Max number of bytes to scan from a file. If a scanned file's size is bigger
+     * than this value then the rest of the bytes are omitted.
+     *
+     * Generated from protobuf field <code>int64 bytes_limit_per_file = 4;</code>
+     * @return int|string
+     */
+    public function getBytesLimitPerFile()
+    {
+        return $this->bytes_limit_per_file;
+    }
+
+    /**
+     * Max number of bytes to scan from a file. If a scanned file's size is bigger
+     * than this value then the rest of the bytes are omitted.
+     *
+     * Generated from protobuf field <code>int64 bytes_limit_per_file = 4;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setBytesLimitPerFile($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->bytes_limit_per_file = $var;
 
         return $this;
     }

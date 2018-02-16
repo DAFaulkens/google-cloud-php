@@ -15,6 +15,10 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class StorageConfig extends \Google\Protobuf\Internal\Message
 {
+    /**
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.StorageConfig.TimespanConfig timespan_config = 6;</code>
+     */
+    private $timespan_config = null;
     protected $type;
 
     public function __construct() {
@@ -96,6 +100,28 @@ class StorageConfig extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\BigQueryOptions::class);
         $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.StorageConfig.TimespanConfig timespan_config = 6;</code>
+     * @return \Google\Cloud\Dlp\V2beta2\StorageConfig_TimespanConfig
+     */
+    public function getTimespanConfig()
+    {
+        return $this->timespan_config;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.StorageConfig.TimespanConfig timespan_config = 6;</code>
+     * @param \Google\Cloud\Dlp\V2beta2\StorageConfig_TimespanConfig $var
+     * @return $this
+     */
+    public function setTimespanConfig($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\StorageConfig_TimespanConfig::class);
+        $this->timespan_config = $var;
 
         return $this;
     }

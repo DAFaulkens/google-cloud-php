@@ -23,7 +23,10 @@ class OutputStorageConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Store findings in a new table in an existing dataset.
+     * Store findings in a new table in an existing dataset. If table_id is not
+     * set a new one will be generated for you with the following format:
+     * dlp_googleapis_yyyy_mm_dd_[dlp_job_id]. Pacific timezone will be used for
+     * generating the date details.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.BigQueryTable table = 1;</code>
      * @return \Google\Cloud\Dlp\V2beta2\BigQueryTable
@@ -34,7 +37,10 @@ class OutputStorageConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Store findings in a new table in an existing dataset.
+     * Store findings in a new table in an existing dataset. If table_id is not
+     * set a new one will be generated for you with the following format:
+     * dlp_googleapis_yyyy_mm_dd_[dlp_job_id]. Pacific timezone will be used for
+     * generating the date details.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.BigQueryTable table = 1;</code>
      * @param \Google\Cloud\Dlp\V2beta2\BigQueryTable $var

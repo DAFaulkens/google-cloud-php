@@ -27,6 +27,13 @@ class RiskAnalysisJobConfig extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta2.BigQueryTable source_table = 2;</code>
      */
     private $source_table = null;
+    /**
+     * Actions to execute at the completion of the job. Are executed in the order
+     * provided.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta2.Action actions = 3;</code>
+     */
+    private $actions;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta2\Dlp::initOnce();
@@ -81,6 +88,34 @@ class RiskAnalysisJobConfig extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Dlp\V2beta2\BigQueryTable::class);
         $this->source_table = $var;
+
+        return $this;
+    }
+
+    /**
+     * Actions to execute at the completion of the job. Are executed in the order
+     * provided.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta2.Action actions = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getActions()
+    {
+        return $this->actions;
+    }
+
+    /**
+     * Actions to execute at the completion of the job. Are executed in the order
+     * provided.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta2.Action actions = 3;</code>
+     * @param \Google\Cloud\Dlp\V2beta2\Action[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setActions($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Dlp\V2beta2\Action::class);
+        $this->actions = $arr;
 
         return $this;
     }

@@ -17,7 +17,8 @@ class GetDeidentifyTemplateRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Resource name of the organization and deidentify template to be read, for
-     * example `organizations/433245324/deidentifyTemplates/432452342`.
+     * example `organizations/433245324/deidentifyTemplates/432452342` or
+     * projects/project-id/deidentifyTemplates/432452342.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -30,7 +31,8 @@ class GetDeidentifyTemplateRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Resource name of the organization and deidentify template to be read, for
-     * example `organizations/433245324/deidentifyTemplates/432452342`.
+     * example `organizations/433245324/deidentifyTemplates/432452342` or
+     * projects/project-id/deidentifyTemplates/432452342.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -42,7 +44,8 @@ class GetDeidentifyTemplateRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Resource name of the organization and deidentify template to be read, for
-     * example `organizations/433245324/deidentifyTemplates/432452342`.
+     * example `organizations/433245324/deidentifyTemplates/432452342` or
+     * projects/project-id/deidentifyTemplates/432452342.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
