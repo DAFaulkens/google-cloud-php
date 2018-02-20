@@ -83,6 +83,13 @@ return [
                 'method' => 'post',
                 'uriTemplate' => '/v2beta2/{parent=organizations/*}/inspectTemplates',
                 'body' => '*',
+                'additionalBindings' => [
+                    [
+                        'method' => 'post',
+                        'uriTemplate' => '/v2beta2/{parent=projects/*}/inspectTemplates',
+                        'body' => '*',
+                    ],
+                ],
                 'placeholders' => [
                     'parent' => [
                         'getters' => [
@@ -95,6 +102,13 @@ return [
                 'method' => 'patch',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/inspectTemplates/*}',
                 'body' => '*',
+                'additionalBindings' => [
+                    [
+                        'method' => 'patch',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/inspectTemplates/*}',
+                        'body' => '*',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
@@ -106,6 +120,12 @@ return [
             'GetInspectTemplate' => [
                 'method' => 'get',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/inspectTemplates/*}',
+                'additionalBindings' => [
+                    [
+                        'method' => 'get',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/inspectTemplates/*}',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
@@ -117,6 +137,12 @@ return [
             'ListInspectTemplates' => [
                 'method' => 'get',
                 'uriTemplate' => '/v2beta2/{parent=organizations/*}/inspectTemplates',
+                'additionalBindings' => [
+                    [
+                        'method' => 'get',
+                        'uriTemplate' => '/v2beta2/{parent=projects/*}/inspectTemplates',
+                    ],
+                ],
                 'placeholders' => [
                     'parent' => [
                         'getters' => [
@@ -128,6 +154,12 @@ return [
             'DeleteInspectTemplate' => [
                 'method' => 'delete',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/inspectTemplates/*}',
+                'additionalBindings' => [
+                    [
+                        'method' => 'delete',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/inspectTemplates/*}',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
@@ -140,6 +172,13 @@ return [
                 'method' => 'post',
                 'uriTemplate' => '/v2beta2/{parent=organizations/*}/deidentifyTemplates',
                 'body' => '*',
+                'additionalBindings' => [
+                    [
+                        'method' => 'post',
+                        'uriTemplate' => '/v2beta2/{parent=projects/*}/deidentifyTemplates',
+                        'body' => '*',
+                    ],
+                ],
                 'placeholders' => [
                     'parent' => [
                         'getters' => [
@@ -152,6 +191,13 @@ return [
                 'method' => 'patch',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/deidentifyTemplates/*}',
                 'body' => '*',
+                'additionalBindings' => [
+                    [
+                        'method' => 'patch',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/deidentifyTemplates/*}',
+                        'body' => '*',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
@@ -163,6 +209,12 @@ return [
             'GetDeidentifyTemplate' => [
                 'method' => 'get',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/deidentifyTemplates/*}',
+                'additionalBindings' => [
+                    [
+                        'method' => 'get',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/deidentifyTemplates/*}',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
@@ -174,6 +226,12 @@ return [
             'ListDeidentifyTemplates' => [
                 'method' => 'get',
                 'uriTemplate' => '/v2beta2/{parent=organizations/*}/deidentifyTemplates',
+                'additionalBindings' => [
+                    [
+                        'method' => 'get',
+                        'uriTemplate' => '/v2beta2/{parent=projects/*}/deidentifyTemplates',
+                    ],
+                ],
                 'placeholders' => [
                     'parent' => [
                         'getters' => [
@@ -185,6 +243,12 @@ return [
             'DeleteDeidentifyTemplate' => [
                 'method' => 'delete',
                 'uriTemplate' => '/v2beta2/{name=organizations/*/deidentifyTemplates/*}',
+                'additionalBindings' => [
+                    [
+                        'method' => 'delete',
+                        'uriTemplate' => '/v2beta2/{name=projects/*/deidentifyTemplates/*}',
+                    ],
+                ],
                 'placeholders' => [
                     'name' => [
                         'getters' => [
