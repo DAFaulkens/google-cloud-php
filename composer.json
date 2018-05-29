@@ -121,6 +121,8 @@
             "Google\\Cloud\\Spanner\\": "Spanner/src",
             "Google\\Cloud\\Speech\\": "Speech/src",
             "Google\\Cloud\\Storage\\": "Storage/src",
+            "Google\\Cloud\\TextToSpeech\\": "TextToSpeech/src",
+            "": "TextToSpeech/proto/src",
             "Google\\Cloud\\Trace\\": "Trace/src",
             "Google\\Cloud\\Translate\\": "Translate/src",
             "Google\\Cloud\\VideoIntelligence\\": "VideoIntelligence/src",
